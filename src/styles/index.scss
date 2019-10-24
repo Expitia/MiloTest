@@ -1,0 +1,103 @@
+$list-red: #ff0000;
+$list-blue: #071eb3;
+$list-green: #059152;
+
+* {
+  font-family: Roboto;
+}
+
+html {
+  /* Modal styles */
+  .ant-modal {
+    .ant-modal-content {
+      .ant-modal-close {
+        display: none;
+      }
+      .ant-modal-body {
+        padding: 10px;
+      }
+      .ant-modal-footer {
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  #root {
+    .ant-layout {
+      min-height: 100vh;
+      /* Header styles */
+      .ant-layout-header {
+        padding: 0px 1rem;
+        background-color: transparent;
+        img {
+          height: 100%;
+          padding: 0.5rem;
+        }
+      }
+      /* Content styles */
+      .ant-layout-content {
+        padding: 1rem;
+        background-color: white;
+
+        h1 {
+          color: $list-blue;
+        }
+
+        .ant-alert {
+          margin: 1.5rem 0px;
+        }
+
+        .list-options {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+
+          > div,
+          > input,
+          > button {
+            width: 100%;
+            text-align: left;
+            margin-top: 0.2rem;
+          }
+        }
+
+        .ant-spin-container {
+          .ant-list-items {
+            > div {
+              height: 50px;
+              display: flex;
+              margin-left: 3rem;
+              align-items: center;
+              justify-content: space-between;
+
+              &.option-todo {
+                border-bottom: 1px solid $list-blue;
+              }
+              &.option-success {
+                border-bottom: 1px solid $list-green;
+              }
+              &.option-delete {
+                border-bottom: 1px solid $list-red;
+              }
+
+              .button-success {
+                color: $list-green;
+                border-color: $list-green;
+              }
+              .button-delete {
+                color: $list-red;
+                margin-left: 0.5rem;
+                border-color: $list-red;
+              }
+            }
+          }
+        }
+      }
+      /* Footer styles */
+      .ant-layout-footer {
+        text-align: center;
+      }
+    }
+  }
+}

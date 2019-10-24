@@ -1,0 +1,27 @@
+[
+  {
+    "description": "First task",
+    "index": 0,
+    "type": "Done"
+  },
+  {
+    "description": "Test task",
+    "index": 1,
+    "type": "Delete"
+  },
+  {
+    "description": "Second Task",
+    "index": 2,
+    "type": "Done"
+  },
+  {
+    "description": "Thirt task",
+    "index": 3,
+    "type": "Delete"
+  },
+  {
+    "description": "Four Task",
+    "index": 4,
+    "type": "ToDo"
+  }
+]
